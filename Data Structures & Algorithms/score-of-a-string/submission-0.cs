@@ -1,0 +1,9 @@
+public class Solution {
+    public int ScoreOfString(string s) {
+        var score = 0;
+        for (int i = 1; i < s.Length; i++) {
+            score += Math.Abs((int)s[i] - (int)s[i-1]);
+        }
+        return score;
+    }
+}
